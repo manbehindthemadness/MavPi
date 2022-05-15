@@ -34,7 +34,7 @@ Everything is setup to automatically launch at startup, just edit the /home/pi/s
 This image is in a working but entirely untested state, MissionControl is the latest version and will run under mono. Alternatively QGroundControl is also at the latest version and has been compiled without error (Take note that AirMap was excluded as I just couldn't get it to play ball).
 All sources and notes are located in /usr/src.
 
-<download link here>
+https://drive.google.com/file/d/1MrJbs5KfF6yDbUIzBOranc4D0D9Jv9UV/view?usp=sharing
 
 **PROCEDURE**
 1. Ensure you use an sd-card with 64-128gb storage as the log files get big fast
