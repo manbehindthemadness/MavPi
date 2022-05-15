@@ -31,7 +31,7 @@ Everything is setup to automatically launch at startup, just edit the /home/pi/s
         echo SESSION_TYPE-------------------------------------------------------------------: $SES_TYPE
         env  # Dump the environment so we can see whats up in the event of a failure.
 
-This image is in a working but entirely untested state, MissionControl is the latest version and will run under mono. Alternatively QGroundControl is also at the latest version and has been compiled without error (Take note that AirMap was excluded as I just couldn't get it to plat ball).
+This image is in a working but entirely untested state, MissionControl is the latest version and will run under mono. Alternatively QGroundControl is also at the latest version and has been compiled without error (Take note that AirMap was excluded as I just couldn't get it to play ball).
 All sources and notes are located in /usr/src.
 
 <download link here>
