@@ -1,5 +1,5 @@
 # MavPi
-An ARCH64 image for the RaspberryPi 3b-4b/Zero 2 sporting both QGroundControl and MissionPlanner
+An ARCH64 image for the RaspberryPi 3/4/Zero 2 sporting both QGroundControl and MissionPlanner
 
 As this image is development ready it's pretty large, the download link is below.
 All passwords are set to default (pi/raspberry) so be sure to update them after you flash.
