@@ -27,7 +27,6 @@ if [ $XDG_SESSION_ID == 1 ]; then
         xrandr -d :0 --output HDMI-1 --rotate right  # Rotate screen (adjust to your needs).
         # /usr/bin/mp &  # Launch MissionPlanner.
         # /bin/QGroundControl &  # Launch QGroundControl.
-
 fi
 echo SESSION_TYPE-------------------------------------------------------------------: $SES_TYPE
 env
