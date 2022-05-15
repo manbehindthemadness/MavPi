@@ -5,10 +5,12 @@ As this image is development ready it's pretty large, the download link is below
 All passwords are set to default (pi/raspberry) so be sure to update them after you flash.
 SSH is enabled by default so access should be pretty straightforward.
 WIFI can be enabled by altering the /etc/wpa_supplicant/wpa_supplicant.conf file and adding something like the following:
+~~~~
 network={
         ssid="mynetwork"
         psk="mypassword"
 }
+~~~~
 I have provided the most basic of window managers (DWM) as when using mono windows resizing just wasn't working out.
 Everything is setup to automatically launch at startup, just edit the /home/pi/start_mav.sh file with whatever options suit your needs:
 
