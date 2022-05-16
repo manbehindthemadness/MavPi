@@ -54,4 +54,11 @@ https://drive.google.com/file/d/1MrJbs5KfF6yDbUIzBOranc4D0D9Jv9UV/view?usp=shari
 10. Log into the unit using **pi@your_ip_here** using password **raspberry**
 11. Update the default password with one of your choosing using the **passwd** command
 
+**Optional Steps**
+
+If you want to use a USB video VTX add the following line to rc.local
+~~~~
+gst-launch-1.0 v4l2src ! xvimagesink ! video/x-raw, format=NV12, width=640, height=480, framerate=25/1 ! videoconvert ! x264enc ! h264parse ! queue ! rtph264pay config-interval=10 pt=96 ! udpsink host=127.0.0.1 port=5600 &
+~~~~
+
 Have Fun!
