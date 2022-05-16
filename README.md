@@ -30,6 +30,11 @@ Everything is setup to automatically launch at startup, just edit the /home/pi/s
                 xrandr -d :0 --output HDMI-1 --rotate right  # Rotate screen (adjust to your needs).
                 # /usr/bin/mp &  # Launch MissionPlanner.
                 # /bin/QGroundControl &  # Launch QGroundControl.
+                
+                # SEE OPTIONAL STEPS AT THE BOTTOM OF THE README
+                # Add these lines if you want to use USB VTX
+                # sleep 10
+                # mjpg_streamer -i "input_uvc.so -d /dev/video0 -f 10 -r 640x480" -o "output_http.so -w ./www -l 127.0.0.1" -b
         fi
         echo SESSION_TYPE-------------------------------------------------------------------: $SES_TYPE
         env  # Dump the environment so we can see whats up in the event of a failure.
@@ -56,9 +61,7 @@ https://drive.google.com/file/d/1MrJbs5KfF6yDbUIzBOranc4D0D9Jv9UV/view?usp=shari
 
 **Optional Steps**
 
-If you want to use a USB video VTX add the following line to rc.local
-~~~~
-gst-launch-1.0 v4l2src ! xvimagesink ! video/x-raw, format=NV12, width=640, height=480, framerate=25/1 ! videoconvert ! x264enc ! h264parse ! queue ! rtph264pay config-interval=10 pt=96 ! udpsink host=127.0.0.1 port=5600 &
-~~~~
+If you want to use a USB video VTX you will have to install mpeg-streamer. Instructions can be found here:
+https://github.com/jacksonliam/mjpg-streamer
 
 Have Fun!
